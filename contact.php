@@ -1,30 +1,26 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
+$address = $_POST['address'];
+$message = $_POST['message'];
 
-    // Validate email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo '<p>Invalid email format. Please provide a valid email address.</p>';
-        exit;
-    }
 
-    $to = 'singamvaishnavi99@gmail.com'; // Change this to your recipient email address
-    $subject = 'New Contact Form Submission';
-    $message_body = "Name: $name\nEmail: $email\nMessage:\n$message";
+//email address of receiver
+$to = "singamvaishnavi99@gmail.com";
 
-    $headers = "From: $email";
+$subject = 'Mail from 3G HR Services in Hyderabad';
 
-    // Attempt to send the email
-    if (mail($to, $subject, $message_body, $headers)) {
-        echo '<p>Your message has been sent successfully!</p>';
-    } else {
-        echo '<p>Sorry, there was an error sending your message.</p>';
-    }
-} else {
-    // If the request method is not POST, redirect back to the contact form
-    header("Location: contact.html");
-    exit;
+$txt = "Name =" .$name. "\r\n Phone Number =" .$phone. "\r\n Email =" .$email. "\r\n Message =" .$message. "\r\n Address =" .$address;
+
+$header = "From: " . "\r\n" ."CC: ";
+
+if($email!=NULL){
+    mail($to,$subject,$txt,$header);
+}
+
+//redirect
+{
+    header("location: index.html");
 }
 ?>

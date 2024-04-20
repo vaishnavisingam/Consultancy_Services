@@ -8967,7 +8967,7 @@ ul {
 }
 
 .contact-page__input-box input[type="text"],
-.contact-page__input-box input[type="email"] {
+.contact-page__input-box input[type="email"], input[type="phone"], input[type="address"] {
   height: 58px;
   width: 100%;
   border: none;

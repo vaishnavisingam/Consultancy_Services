@@ -9,7 +9,7 @@ $message= $_POST['message'];
 $to = "singamvaishnavi99@gmail.com";
 $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Phone =" . $phone . "\r\n address =" . $address;
-$headers = "From: noreply@vaishnavi99.com" . "\r\n" .
+$headers = "From: noreply@3ghrservices" . "\r\n" .
 "CC: singamvaishnavi99@gmail.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);

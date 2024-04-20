@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $txt = "Name: " . $name . "\r\n Email: " . $email . "\r\n Phone: " . $phone . "\r\n Address: " . $address . "\r\n Message: " . $message;
 
     // Additional headers
-    $headers = "From: " . $email . "\r\n" . "CC: ";
+    $headers = "From:noreply@3ghrservices.com " . $email . "\r\n" . "CC: ";
 
     // Send email
     if (mail($to, $subject, $txt, $headers)) {

@@ -4,6 +4,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
+    // Validate email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo '<p>Invalid email format. Please provide a valid email address.</p>';
+        exit;
+    }
+
     $to = 'singamvaishnavi99@gmail.com'; // Change this to your recipient email address
     $subject = 'New Contact Form Submission';
     $message_body = "Name: $name\nEmail: $email\nMessage:\n$message";

@@ -1,21 +1,24 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
-    
-    $to = "singamvaishnavi99@gmail.com"; // Change this to your email address
-    $subject = "New Contact Form Submission";
-    $body = "Name: $name\nEmail: $email\nMessage: $message";
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-    if (mail($to, $subject, $body)) {
-        echo "Thank you for your message. We will get back to you soon!";
+    $to = 'singamvaishnavi99@gmail.com'; // Change this to your recipient email address
+    $subject = 'New Contact Form Submission';
+    $message_body = "Name: $name\nEmail: $email\nMessage:\n$message";
+
+    $headers = "From: $email";
+
+    // Attempt to send the email
+    if (mail($to, $subject, $message_body, $headers)) {
+        echo '<p>Your message has been sent successfully!</p>';
     } else {
-        echo "Sorry, something went wrong. Please try again later.";
+        echo '<p>Sorry, there was an error sending your message.</p>';
     }
 } else {
-    // If someone tries to access this file directly, redirect them back to the form
-    header("Location: index.html");
+    // If the request method is not POST, redirect back to the contact form
+    header("Location: contact.html");
     exit;
 }
 ?>

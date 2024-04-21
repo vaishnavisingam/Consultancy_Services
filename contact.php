@@ -1,19 +1,34 @@
 <?php
-//get data from form  
-$name = $_POST['name'];
-$email= $_POST['email'];
-$phone = $_POST['phone'];
-$address = $_POST['address']; // corrected variable name
-$message= $_POST['message'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone']; // New phone field
+    $address = $_POST['address']; // New address field
+    $message = $_POST['message'];
+    
+    // Set the recipient email address. Update this to your email address.
+    $to = "singamvaishnavi99@gmail.com";
 
-$to = "singamvaishnavi99@gmail.com";
-$subject = "Mail From website";
-$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Phone =" . $phone . "\r\n Address =" . $address; // corrected variable name
-$headers = "From: noreply@3ghrservices.com" . "\r\n" . // corrected email address
-"CC: singamvaishnavi99@gmail.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+    // Set the email subject.
+    $subject = "New Contact Form Submission";
+
+    // Build the email content.
+    $email_content = "Name: $name\n";
+    $email_content .= "Email: $email\n";
+    $email_content .= "Phone: $phone\n"; // Include phone
+    $email_content .= "Address: $address\n"; // Include address
+    $email_content .= "Message:\n$message\n";
+
+    // Build the email headers.
+    $email_headers = "From: $name <$email>";
+
+    // Send the email.
+    if (mail($to, $subject, $email_content, $email_headers)) {
+        // If email is sent successfully.
+        echo "<script>alert('Thank you! Your message has been sent.');</script>";
+    } else {
+        // If an error occurred.
+        echo "<script>alert('Oops! Something went wrong. Please try again later.');</script>";
+    }
 }
-//redirect
-header("Location:index.html");
 ?>

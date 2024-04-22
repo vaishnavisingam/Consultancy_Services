@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone']; // New phone field
     $address = $_POST['address']; // New address field
     $message = $_POST['message'];
-    
+
     // Set the recipient email address. Update this to your email address.
     $to = "singamvaishnavi99@gmail.com";
 

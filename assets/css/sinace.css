@@ -13311,3 +13311,14 @@ ul {
  }
  
 }
+
+@media (min-width:768px)
+{
+  .main-header-two a img{
+    margin-top:6%;
+   }
+   .mobile-nav__toggler{
+    margin-left: 300px;
+   }
+}
+

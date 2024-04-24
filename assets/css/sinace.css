@@ -5746,6 +5746,7 @@ ul {
   background-size: cover;
   background-position: center;
   z-index: -1;
+  background-color: #0b4094;
 }
 
 .site-footer__shape-1 {
@@ -5894,11 +5895,19 @@ ul {
 
 .footer-widget__link-list {
   position: relative;
-  display: block;
+  /* display: block; */
+  color: #7e8a9b;
+
+}
+ 
+.footer__fa-phone-square{
+  position: absolute;
+  left : 0px;
 }
 
 .footer-widget__link-list li+li {
   margin-top: 5px;
+
 }
 
 .footer-widget__link-list li a {
@@ -10338,7 +10347,7 @@ ul {
 .services-details__title-1 {
   font-size: 36px;
   font-weight: 600;
-  line-height: 46px;
+  line-height: 50px;
   margin-top: 19px;
   margin-bottom: 21px;
 }
@@ -13256,7 +13265,7 @@ ul {
 
 /* Division */
 .main-header-two .main-menu .main-menu-two__main-menu-box{
- justify-content:flex-end;
+ justify-content:center;
 }
 
 @media (max-width:1199px){
@@ -13321,4 +13330,5 @@ ul {
     margin-left: 300px;
    }
 }
+
 

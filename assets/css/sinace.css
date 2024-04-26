@@ -13331,3 +13331,6 @@ ul {
    }
 }
 
+.services-detail__circle{
+  list-style-type: circle;
+}

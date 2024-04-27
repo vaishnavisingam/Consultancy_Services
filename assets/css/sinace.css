@@ -13334,3 +13334,39 @@ ul {
 .services-detail__circle{
   list-style-type: circle;
 }
+
+ .stricky-header .main-menu-two__main-menu-box{
+  max-width:1250px;
+  min-width:1250px;
+  height:90px;
+  padding-bottom:0px;
+  left:37px;
+ }
+ 
+ .main-header-two .main-menu .main-menu__list{
+  min-width:1250px;
+  max-width:1250px;
+  position:relative;
+  left:100px;
+ }
+ 
+/* Font Icon */
+.site-footer__top li .fas{
+ position:relative;
+ left:-5px;
+}
+
+.stricky-header .main-menu-two__search-box a{
+  display:none;
+ }
+ .main-header-two .main-menu .main-menu__list{
+  left:132px;
+ }
+ 
+ /* Division */
+ .stricky-header .main-menu-two__main-menu-box{
+  transform:translatex(-40px) translatey(0px);
+ }
+
+ 
+ 

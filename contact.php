@@ -1,34 +1,26 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone']; // New phone field
-    $address = $_POST['address']; // New address field
-    $message = $_POST['message'];
+$name = $_POST['name'];
+$phoneNumber = $_POST['phoneNumber'];
+$email = $_POST['email'];
+$address = $_POST['address'];
+$message = $_POST['message'];
 
-    // Set the recipient email address. Update this to your email address.
-    $to = "singamvaishnavi99@gmail.com";
 
-    // Set the email subject.
-    $subject = "New Contact Form Submission";
+//email address of receiver
+$to = "singamvaishnavi99@gmail.com";
 
-    // Build the email content.
-    $email_content = "Name: $name\n";
-    $email_content .= "Email: $email\n";
-    $email_content .= "Phone: $phone\n"; // Include phone
-    $email_content .= "Address: $address\n"; // Include address
-    $email_content .= "Message:\n$message\n";
+$subject = 'Mail 3ghr services in Hyderabad';
 
-    // Build the email headers.
-    $email_headers = "From: $name <$email>";
+$txt = "Name =" .$name. "\r\n Phone Number =" .$phoneNumber. "\r\n Email =" .$email. "\r\n Address =" .$address. "\r\n Message =" .$message; 
 
-    // Send the email.
-    if (mail($to, $subject, $email_content, $email_headers)) {
-        // If email is sent successfully.
-        echo "<script>alert('Thank you! Your message has been sent.');</script>";
-    } else {
-        // If an error occurred.
-        echo "<script>alert('Oops! Something went wrong. Please try again later.');</script>";
-    }
+$header = "From: noreply@singamvaishnavi99.com" . "\r\n" ."CC: singamvaishnavi99@gmail.com";
+
+if($email!=NULL){
+    mail($to,$subject,$txt,$header);
+}
+
+//redirect
+{
+    header("location: index.html");
 }
 ?>

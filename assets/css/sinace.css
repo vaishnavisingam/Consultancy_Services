@@ -13374,6 +13374,20 @@ ul {
   left:60px;
  }
 
+ .card-footer_h2{
+  color: var(--sinace-black);
+ }
+
+ .contact_service{
+ 
+  border: 5px solid black;
+}
+
+/* Contact page  form box */
+.contact-page .contact-page__left .contact-page__form-box{
+  left:220px;
+ }
+ 
 
 
  

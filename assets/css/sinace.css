@@ -13368,5 +13368,12 @@ ul {
   transform:translatex(-40px) translatey(0px);
  }
 
- 
+  /* Main menu  list */
+.stricky-header .main-menu__list{
+  position:relative;
+  left:60px;
+ }
+
+
+
  

@@ -499,159 +499,229 @@
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
 
+ <!--Page Header Start-->
+ <section class="page-header">
+    <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
+    </div>
+    <div class="page-header__shape-2 float-bob-x">
+        <img src="assets/images/shapes/page-header-shape-2.png" alt="">
+    </div>
+    <div class="page-header__shape-1 float-bob-y">
+        <img src="assets/images/shapes/page-header-shape-1.png" alt="">
+    </div>
+    <div class="page-header__shape-3 float-bob-x">
+        <img src="assets/images/shapes/page-header-shape-3.png" alt="">
+    </div>
+    <div class="container">
+        <div class="page-header__inner">
+            <h2>Contact</h2>
+            <div class="thm-breadcrumb__inner">
+                <ul class="thm-breadcrumb list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>/</span></li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Page Header End-->
 
-        <!--Page Header Start-->
-        <section class="page-header">
-            <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg);">
-            </div>
-            <div class="page-header__shape-2 float-bob-x">
-                <img src="assets/images/shapes/page-header-shape-2.png" alt="">
-            </div>
-            <div class="page-header__shape-1 float-bob-y">
-                <img src="assets/images/shapes/page-header-shape-1.png" alt="">
-            </div>
-            <div class="page-header__shape-3 float-bob-x">
-                <img src="assets/images/shapes/page-header-shape-3.png" alt="">
-            </div>
-            <div class="container">
-                <div class="page-header__inner">
-                    <h2>Contact</h2>
-                    <div class="thm-breadcrumb__inner">
-                        <ul class="thm-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><span>/</span></li>
-                            <li>Contact</li>
-                        </ul>
+<!-- Contact Page Start -->
+<section class="contact-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6">
+                <div class="contact-page__left">
+                    <div class="contact-page__form-box">
+                        <form action="contact.php" method="post" name="emailContact"
+                            class="contact-page__form contact-form-validated" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="contact-page__input-box">
+                                        <input type="text" placeholder="Your name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="contact-page__input-box">
+                                        <input type="email" placeholder="Email address" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="contact-page__input-box">
+                                        <input type="phone" placeholder="Phone number" name="phoneNumber"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="contact-page__input-box">
+                                        <input type="address" placeholder="Address" name="address" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="contact-page__input-box text-message-box">
+                                        <textarea name="message" placeholder="Write message"
+                                            required></textarea>
+                                    </div>
+                                    <div class="contact-page__btn-box">
+                                        <button type="submit" value="Submit"
+                                            class="thm-btn contact-page__btn">Send a Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="result"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Page Header End-->
 
-        <!-- Contact Page Start -->
-        <section class="contact-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-6">
-                        <div class="contact-page__left">
-                            <div class="contact-page__form-box">
-                                <form action="contact.php" method="post" name="emailContact"
-                                    class="contact-page__form contact-form-validated" novalidate="novalidate">
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="contact-page__input-box">
-                                                <input type="text" placeholder="Your name" name="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="contact-page__input-box">
-                                                <input type="email" placeholder="Email address" name="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="contact-page__input-box">
-                                                <input type="phone" placeholder="Phone number" name="phoneNumber" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12">
-                                            <div class="contact-page__input-box">
-                                                <input type="address" placeholder="Address" name="address" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="contact-page__input-box text-message-box">
-                                                <textarea name="message" placeholder="Write message"
-                                                    required></textarea>
-                                            </div>
-                                            <div class="contact-page__btn-box">
-                                                <button type="submit" value="Submit"
-                                                    class="thm-btn contact-page__btn">Send a Message</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                <div class="result"></div>
+
+            <div class="col-xl-7 col-lg-6">
+                <div class="contact-page__right">
+                    <div class="section-title text-left">
+                        <div class="section-title__tagline-box">
+                            <span class="section-title__tagline">contact us</span>
+                        </div>
+                        <h2 class="section-title__title">Have Questions? Contact
+                            <br> with us <span>Anytime</span>
+                        </h2>
+                    </div>
+                    <ul class="contact-page__points list-unstyled">
+                        <li>
+                            <div class="icon">
+                                <span class="icon-telephone-1"></span>
+                            </div>
+                            <div class="text">
+                                <p>Have any questions?</p>
+                                <h3><a href="tel:+91 40 4121 9999, 9014090690 & 9390699232">+91 40 4121 9999,
+                                        9014090690 & 9390699232</a></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-email"></span>
+                            </div>
+                            <div class="text">
+                                <p>Send Email</p>
+                                <h3><a href="mailto:hr@3ghrservices.com">hr@3ghrservices.com</a></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="icon-pin"></span>
+                            </div>
+                            <div class="text">
+                                <p>Visit anytime</p>
+                                <h3>Flat No.309, East Block, Archana Arcade IT Complex Secunderabad,
+                                    Telangana, India.<br> Pin: 500025 <br><br>
+                                    Land mark : Beside Secunderabad East Metro Station</h3><br><br>
+                            </div>
+                        <li>
+                            <!-- <div class="icon">
+                                    <span class="icon-pin"></span>
+                                </div> -->
+                            <!-- <div class="text">
+                                    <p> Branch Office: (AP)</p>
+                                    <h3>Flat No.1699/61, Krishnalanka, Katinagar Vijayawada Andhra Pradesh,
+                                        Telangana, India.<br> Pin: 520001, AP [at] 3ghrservices.com <br><br> -->
+                            <!-- <p><iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30603.214606591515!2d80.57889994531854!3d16.505799440048985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f004bdaffbef%3A0x498f0cb4129f510d!2sKrishnalanka%2C%20Vijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1715062129809!5m2!1sen!2sin"
+                                                width="600" height="450" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </p> -->
+
+                            <!-- </div> -->
+                        </li><br><br>
+                        <!-- <li>
+                            <div class="icon">
+                                <span class="icon-pin"></span>
+                            </div>
+                            <div class="text">
+                                <p> Branch Office: (KA)
+                                </p>
+                                <h3>Flat No. 7/1, Sri Mukambika,
+                                    18th cross, Kanakanagar,RT Nagar post, Bangalore-560032
+                                    <br> Pin:560032. Ka [at] 3ghrservices.com <br><br>
+                                    <p>
+                                    </p>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="row row-cols-3 row-cols-md-3   g-3 mt-2">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body  overflow-hidden ">
+
+                                <p class="card-textmb-2"><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30603.214606591515!2d80.57889994531854!3d16.505799440048985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f004bdaffbef%3A0x498f0cb4129f510d!2sKrishnalanka%2C%20Vijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1715062129809!5m2!1sen!2sin"
+                                        width="600" height="450" style="border:0;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                            </div>
+                            <div class="card-footer">
+                                <h2 class="card-footer_h2"> Vijayawada </h2>
+                                <small class="text-body-secondary">Flat No.1699/61, 3ghrservices.com,
+                                    Krishnalanka, Katinagar Vijayawada Andhra Pradesh,
+                                    Telangana, India.</small>
+                                <small class="text-body-secondary">Pin: 520001, AP [at] 3ghrservices.com
+                                </small><br>
+                                <small> &nbsp; </small>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="row row-cols-3 row-cols-md-3
-                       g-3 mt-2">
-                        <div class="col">
-                            <div class="card h-100">
-                                <div class="card-body  overflow-hidden ">
-
-                                    <p class="card-textmb-2"><iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30603.214606591515!2d80.57889994531854!3d16.505799440048985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f004bdaffbef%3A0x498f0cb4129f510d!2sKrishnalanka%2C%20Vijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1715062129809!5m2!1sen!2sin"
-                                            width="600" height="450" style="border:0;" allowfullscreen=""
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-                                </div>
-                                <div class="card-footer">
-                                    <h2 class="card-footer_h2"> Vijayawada </h2>
-                                    <br>
-                                    <small class="text-body-secondary">Flat No.1699/61, 3ghrservices.com,
-                                        Krishnalanka, Katinagar Vijayawada Andhra Pradesh,
-                                        Telangana, India.</small>
-                                    <small class="text-body-secondary">Pin: 520001.<br> AP [at] 3ghrservices.com
-                                    </small><br>
-                                    <small> &nbsp;&nbsp;&nbsp;</small>
-                                </div>
+                    <div class="col">
+                        <div class="card h-100 w-450">
+                            <div class="card-body overflow-hidden">
+                                <p class="card-text mb-2"><iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36322.85454649917!2d72.8110619357577!3d19.004654356590617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf4cc40bd0b5%3A0xc33aece3a8e82e55!2sPrakash%20Cotton%20Mill%20MAHADA%20Building!5e0!3m2!1sen!2sin!4v1715148954770!5m2!1sen!2sin"
+                                        width="600" height="450" style="border:0;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                            </div>
+                            <div class="card-footer">
+                                <h2 class="card-footer_h2"> Hyderabad </h2>
+                                <small class="text-body-secondary">Flat No. 7/1,3ghrservices.com , Sri
+                                    Mukambika,
+                                    18th cross, Kanakanagar,RT Nagar post, Bangalore-560032</small>
+                                <small class="text-body-secondary"> Pin:560032. [at] 3ghrservices.com </small>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100 w-450">
-                                <div class="card-body overflow-hidden">
-                                    <p class="card-text mb-2"><iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36322.85454649917!2d72.8110619357577!3d19.004654356590617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf4cc40bd0b5%3A0xc33aece3a8e82e55!2sPrakash%20Cotton%20Mill%20MAHADA%20Building!5e0!3m2!1sen!2sin!4v1715148954770!5m2!1sen!2sin"
-                                            width="600" height="450" style="border:0;" allowfullscreen=""
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-                                </div>
-                                <div class="card-footer">
-                                    <h2 class="card-footer_h2"> Hyderabad </h2>
-                                    <br>
-                                    <small class="text-body-secondary">Flat No. 7/1,3ghrservices.com , Sri
-                                        Mukambika,
-                                        18th cross, Kanakanagar,RT Nagar post, Bangalore-560032</small>
-                                    <small class="text-body-secondary"> Pin:560032.<br> [at] 3ghrservices.com </small>
-                                </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 w-450">
+                            <div class="card-body  overflow-hidden">
+                                <p class="card-text mb-2"> <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.77445878020865!2d72.82442922244113!3d19.002469716382976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf4cc40bd0b5%3A0xc33aece3a8e82e55!2sPrakash%20Cotton%20Mill%20MAHADA%20Building!5e0!3m2!1sen!2sin!4v1715148576327!5m2!1sen!2sin"
+                                        width="600" height="450" style="border:0;" allowfullscreen=""
+                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <h2> Mumbai </h2>
+                                <small class="text-body-secondary"> 302, 3rd Floor, 3ghrservices.com , A Wing,
+                                    Prakash Cotton mill Mahada Building, Lower Parel,Mumbai,400013, India
+                                </small>
+                                <small class="text-body-secondary"> pin:400013. [at] 3ghrservices.com </small>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100 w-450">
-                                <div class="card-body  overflow-hidden">
-                                    <p class="card-text mb-2"> <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.77445878020865!2d72.82442922244113!3d19.002469716382976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf4cc40bd0b5%3A0xc33aece3a8e82e55!2sPrakash%20Cotton%20Mill%20MAHADA%20Building!5e0!3m2!1sen!2sin!4v1715148576327!5m2!1sen!2sin"
-                                            width="600" height="450" style="border:0;" allowfullscreen=""
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <h2> Mumbai </h2>
-                                    <br>
-                                    <small class="text-body-secondary"> 302, 3rd Floor, 3ghrservices.com , A Wing,
-                                        Prakash Cotton mill Mahada Building, Lower Parel,Mumbai,400013, India
-                                    </small>
-                                    <small class="text-body-secondary"> Pin:400013.<br> [at] 3ghrservices.com </small>
-                                </div>
-                            </div>
-                        </div>
-          </div>
-          </div>
-          </div>
-          </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact Page End-->
 
-        <!--Contact Page End-->
-        
-        <!--Google Map Start-->
-        <section class="google-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5111742169624!2d78.50360457516602!3d17.43523128346012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a242a4f0069%3A0x33881ee5b3c8b92!2s3G%20HR%20Services%20(%20Best%20Job%20Consultant%20in%20Hyderabad)!5e0!3m2!1sen!2sin!4v1713367296194!5m2!1sen!2sin"
-                class="google-map__one" allowfullscreen></iframe>
+<!--Google Map Start-->
+<section class="google-map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5111742169624!2d78.50360457516602!3d17.43523128346012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a242a4f0069%3A0x33881ee5b3c8b92!2s3G%20HR%20Services%20(%20Best%20Job%20Consultant%20in%20Hyderabad)!5e0!3m2!1sen!2sin!4v1713367296194!5m2!1sen!2sin"
+        class="google-map__one" allowfullscreen></iframe>
 
-        </section>
+</section>
 
  
  <!-- Footer -->

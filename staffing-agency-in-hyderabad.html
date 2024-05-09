@@ -36,6 +36,16 @@
         .footer-widget_column {
             margin-right: 40px;
         }
+                    @media (max-width: 576px) {
+    .row-cols-md-3 > .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .w-450 {
+        width: 100% !important; /* Override Bootstrap width */
+    }
+}
     </style>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />

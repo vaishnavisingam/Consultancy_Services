@@ -13389,5 +13389,13 @@ ul {
  }
   */
 
+  .card-footer_h2{
+    color: var(--sinace-black);
+   }
+   .contact_service{
+   
+    border: 5px solid black;
+  }
+
 
  

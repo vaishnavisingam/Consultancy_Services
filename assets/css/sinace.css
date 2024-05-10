@@ -13397,5 +13397,11 @@ ul {
     border: 5px solid black;
   }
 
-
- 
+  .service-box-1 img {
+        margin-left: 50px;
+        position: relative;
+        display: block;
+        padding: 20px 20px 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 1px 60px 1px rgba(1, 1, 1, 0.1);
+    }

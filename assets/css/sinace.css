@@ -5172,6 +5172,9 @@ ul {
   -webkit-transition: 500ms;
   transition: 500ms;
   opacity: 0.2;
+  max-width: 100%;
+  aspect-ratio: 4/2;
+  object-fit:contain;
 }
 
 .brand-one__single:hover .brand-one__img>img {
@@ -6207,6 +6210,7 @@ ul {
 
 .feature-one__title a {
   color: var(--sinace-white);
+  font-size: 15px;
 }
 
 .feature-one__hover-content {

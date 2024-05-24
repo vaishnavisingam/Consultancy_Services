@@ -711,7 +711,23 @@
         font-size: 35px;
         line-height: 45px;
     }
+    .testimonial-two__bottom{
+        max-width: 100%;
+        margin: 5px;
+    }
 
+    .testimonial-two__logo-extra-img > img{
+        height:30px;
+        width:50px;
+        position: relative;
+        right: 3px;
+        top: 3px;
+        }
+
+    .testimonial-two__logo-extra-img > img{
+        height:30px;
+        width:50px
+        }
     .section-title__title br {
         display: none;
     }
@@ -2088,14 +2104,7 @@
     .main-menu-three__top-inner {
         padding-right: 50px;
     }
-
-
-
-
-
-
 }
-
 
 
 @media only screen and (min-width: 1600px) and (max-width: 1850px) {
@@ -2111,3 +2120,7 @@
         margin-left: 133px;
     }
 }
+
+
+
+

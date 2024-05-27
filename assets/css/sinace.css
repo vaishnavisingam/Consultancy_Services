@@ -7138,8 +7138,8 @@ ul {
 }
 
 .testimonial-two__text {
-  font-size: 18px;
-  line-height: 34px;
+  font-size: 15px;
+  line-height: 30px;
   margin-top: 21px;
 }
 
@@ -13402,7 +13402,7 @@ ul {
   }
 
   .service-box-1 img {
-        margin-left: 50px;
+        margin-left: 0px;
         position: relative;
         display: block;
         padding: 20px 20px 20px;
@@ -13462,3 +13462,57 @@ ul {
 .page-wrapper .container .testimonial-two{
   padding-top:0px;
  }
+ 
+ @media (max-width:991px){
+
+  /* Bold Tag */
+  .project-two__completed-box .project-two__count-count-plus b{
+   position:relative;
+   left:-111px;
+  }
+  
+ }
+ 
+ @media (max-width:767px){
+ 
+  /* Bold Tag */
+  .project-two__completed-box .project-two__count-count-plus b{
+   left:-200px;
+  }
+  
+ }
+ 
+ @media (max-width:575px){
+ 
+  /* Bold Tag */
+  .project-two__completed-box .project-two__count-count-plus b{
+   bottom:4px;
+   left:26px;
+  }
+  
+ }
+
+ @media (max-width:1199px){
+
+  /* Bold Tag */
+  .project-two__completed-box .project-two__count-count-plus b{
+   position:relative;
+   left:-5px;
+  }
+  
+ }
+
+ /* @media (max-width:767px){
+
+
+  .project-two__completed-box .project-two__count-count-plus b{
+   bottom:-131px;
+   left:-200px !important;
+  }
+  
+  
+  .project-two__completed-content .count-box h3{
+   left:0px;
+  }
+  
+ } */

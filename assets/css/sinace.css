@@ -6158,6 +6158,7 @@ ul {
 .feature-one__img-box {
   position: relative;
   display: block;
+  overflow: hidden;
 }
 
 .feature-one__img {
@@ -6167,12 +6168,14 @@ ul {
 
 .feature-one__img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .feature-one__title-box {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 6px;
   right: 0;
   padding: 27px 30px 29px;
   background-color: rgba(var(--sinace-base-rgb), .90);
@@ -13516,3 +13519,16 @@ ul {
   }
   
  } */
+ .stricky-header .main-menu-two__main-menu-box-left{
+  left:-39px;
+ }
+
+ @media (min-width: 668px) and (max-width: 1300px) {
+  /* Your styles for tablets */
+  .main-slider-two__rounded-text{
+    display: none;
+  }
+}
+
+
+ 

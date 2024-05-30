@@ -13530,5 +13530,16 @@ ul {
   }
 }
 
+/* @media (min-width:344px) and (max-width:882px){
+  .project-two__count-count-plus{
+    top: 130px;
+    left: -100px;
+  }
+} */
 
- 
+ /* @media (min-width:697px) and (max-width:940) {
+  .project-two__count-count-plus{
+    top: 1.8rem;
+    right: 34%;
+  }
+ } */

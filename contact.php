@@ -1,28 +1,25 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phoneNumber = $_POST['phoneNumber'];
-$address = $_POST['address'];
-$message = $_POST['message'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $jobseeker = $_POST['jobseeker'];
+    $employer = $_POST['employer'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phoneNumber = $_POST['phoneNumber'];
+    $address = $_POST['address'];
+    $message = $_POST['message'];
 
+    // Email address of receiver
+    $to = "singamvaishnavi99@gmail.com";
+    $subject = 'Mail from 3ghr services in Hyderabad';
 
-//email address of receiver
-$to = "singamvaishnavi99@gmail.com";
+    $txt = "jobseeker: " . $jobseeker .  "\r\nemployer: " . $employer .   "\r\nName: " . $name . "\r\nEmail: " . $email . "\r\nPhone Number: " . $phoneNumber . "\r\nAddress: " . $address . "\r\nMessage: " . $message;
 
-$subject = 'Mail from 3ghr services in Hyderabad';
+    $headers = "From: noreply@singamvaishnavi.com" . "\r\n" . "CC: singamvaishnavi99@gmail.com";
 
-$txt = "name =" .$name. "\r\n email =" .$email. "\r\n phoneNumber=" .$phoneNumber. "\r\n address=" .$address. "\r\n message =" .$message;
-
-$header = "From: noreply@singamvaishnavi.com" . "\r\n" ."CC: singamvaishnavi99@gmail.com";
-
-if (function_exists('mail')) {
-   
-    // Call the mail function
-    mail($to, $subject,$header, $message, );
-    
-} else {
-    // Handle the error gracefully
-   
-    echo "The mail function is not available on this server.";
+    if (mail($to, $subject, $txt, $headers)) {
+        echo "Mail sent successfully!";
+    } else {
+        echo "Failed to send mail.";
+    }
 }
 ?>

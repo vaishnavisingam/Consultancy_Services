@@ -1102,8 +1102,8 @@ ul {
 
 .main-menu .main-menu__list>li>ul>li>ul,
 .stricky-header .main-menu__list>li>ul>li>ul {
-  top: 0;
-  left: 100%;
+  top: -300px;
+  left: 110%;
 }
 
 .main-menu .main-menu__list li ul li>ul.right-align,
@@ -1818,7 +1818,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 .main-menu-two__social a {
@@ -10316,6 +10316,7 @@ input[type="address"] {
 .services-details__right {
   position: relative;
   display: block;
+  
 }
 
 .services-details__img {
@@ -10360,6 +10361,7 @@ input[type="address"] {
   line-height: 50px;
   margin-top: 19px;
   margin-bottom: 21px;
+  
 }
 
 .services-details__text-box {
@@ -13311,7 +13313,7 @@ input[type="address"] {
 
 @media (min-width:768px) {
   .main-header-two a img {
-    margin-top: 6%;
+    margin-top: 30%;
   }
 
   .mobile-nav__toggler {
@@ -13388,7 +13390,7 @@ input[type="address"] {
 }
 
 .service-box-1 img {
-  margin-left: 0px;
+  margin-left: 40px;
   position: relative;
   display: block;
   padding: 20px 20px 20px;
@@ -13398,7 +13400,7 @@ input[type="address"] {
 
 .project-two__count-count-plus {
   color: #ffffff;
-  font-size: 2.9rem;
+  font-size: 2rem;
   position: absolute;
   top: 1.8rem;
   right: 34%;

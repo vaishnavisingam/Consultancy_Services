@@ -917,6 +917,7 @@
 
     .about-two__shape-1 {
         display: none;
+        position: absolute;
     }
 
     .about-two__points {
